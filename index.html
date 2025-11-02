@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cut 10kg — Simple Veg Diet & Home Workout (Ready to Host)</title>
+  <style>
+    :root{
+      --bg:#fbfbfb;--card:#ffffff;--muted:#6b7280;--accent:#0f766e;--danger:#dc2626;--glass:rgba(15,118,110,0.06);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial; background:var(--bg); color:#111827}
+    .wrap{max-width:980px;margin:28px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .top-actions{display:flex;gap:8px}
+    button{background:var(--accent);border:0;color:white;padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:600}
+    button.ghost{background:transparent;color:var(--accent);border:1px solid rgba(15,118,110,0.12)}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+    .section-title{display:flex;align-items:center;justify-content:space-between}
+    .muted{color:var(--muted)}
+    ul{padding-left:18px}
+    .meal{display:flex;gap:12px;align-items:flex-start;margin:10px 0}
+    .badge{background:var(--glass);padding:6px 8px;border-radius:8px;font-weight:700;color:var(--accent);font-size:12px}
+    .workout-list{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .exercise{background:#f8fafb;border-radius:8px;padding:8px}
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    .print-hide{display:inline-block}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.print-hide{display:none}}
+    @media print{body{background:white}button, .top-actions, .print-hide{display:none} .wrap{padding:0;margin:0} .card{box-shadow:none;border-radius:0}}
+    .collapse{cursor:pointer}
+    .collapsible{max-height:0;overflow:hidden;transition:max-height .28s ease}
+    .open .collapsible{max-height:2000px;padding-top:12px}
+    .download{background:transparent;border:1px solid rgba(0,0,0,0.08);padding:8px 10px;border-radius:8px}
+    .small{font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Cut 10kg — Simple Veg Diet & Home Workout</h1>
+        <p class="lead">For a 21-year-old female, 72 kg. No exotic food. Home-friendly exercises. Conservative, sustainable plan (12–16 weeks).</p>
+      </div>
+      <div class="top-actions print-hide">
+        <button id="printBtn">Print</button>
+        <button id="downloadBtn" class="ghost">Download HTML</button>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main class="card">
+        <div class="section-title">
+          <strong>Plan summary</strong>
+          <span class="muted small">Calories ~1300–1400 · Protein 60–70g · Timeline 3–4 months</span>
+        </div>
+
+        <hr />
+
+        <section>
+          <h3>Daily routine (simple)</h3>
+          <ul>
+            <li>Wake: warm water + lemon, 4–5 soaked almonds + 1 walnut</li>
+            <li>Breakfast 8–9am, Lunch 1–2pm, Snack 4–5pm, Dinner 7–8pm</li>
+            <li>Drink ≥3L water, sleep 7–8 hours, weigh weekly same time</li>
+            <li>1 cheat meal/week, not cheat day</li>
+          </ul>
+        </section>
+
+        <section style="margin-top:12px">
+          <div class="section-title">
+            <strong>Meal options (pick 1 per slot)</strong>
+            <span class="muted small">Ordinary Indian veg food. Swap similar items freely.</span>
+          </div>
+
+          <div style="margin-top:10px">
+            <div class="meal"><div class="badge">Breakfast</div>
+              <div>
+                <ul>
+                  <li>2 besan chilla + curd</li>
+                  <li>OR 1 small bowl poha with veggies</li>
+                  <li>OR 1 bowl oats in milk (no sugar) + nuts</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="meal"><div class="badge">Lunch</div>
+              <div>
+                <ul>
+                  <li>1 cup dal/rajma/chole (moderate oil)</li>
+                  <li>1 cup sabzi (bhindi, lauki, methi, paneer)</li>
+                  <li>1 roti OR 1/2 cup rice + salad</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="meal"><div class="badge">Snack</div>
+              <div>
+                <ul>
+                  <li>Buttermilk / green tea + 1 fruit (apple/guava/papaya)</li>
+                  <li>Optional: handful roasted chana / peanuts</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="meal"><div class="badge">Dinner</div>
+              <div>
+                <ul>
+                  <li>1 bowl soup + paneer/tofu stir-fry</li>
+                  <li>OR 1 roti + sabzi (avoid rice at dinner)</li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="muted small">Protein sources: paneer, tofu, dals, sprouts, milk, curd. Use mustard/olive oil modestly.</p>
+          </div>
+        </section>
+
+        <section style="margin-top:14px">
+          <div class="section-title">
+            <strong>What to avoid</strong>
+            <span class="muted small">Simple rules beat willpower.</span>
+          </div>
+          <ul>
+            <li>No sugary drinks, chips, biscuits, fried food, refined white bread</li>
+            <li>No late-night heavy meals; drink water if "hungry" at night</li>
+            <li>Limit bananas/mangoes while cutting (higher sugar)</li>
+          </ul>
+        </section>
+
+        <section style="margin-top:14px">
+          <div class="section-title">
+            <strong>Weekly strategy</strong>
+            <span class="muted small">Consistency > perfection</span>
+          </div>
+          <ul>
+            <li>Workout 45 min/day, 5–6 days/week. Rest 1 day.</li>
+            <li>Track weight weekly, progress photos monthly.</li>
+            <li>If energy low: add 100–150 kcal from nuts/dairy; do not starve.</li>
+          </ul>
+        </section>
+
+        <section style="margin-top:14px">
+          <div class="section-title">
+            <strong>Simple substitutions</strong>
+            <span class="muted small">Practical swaps</span>
+          </div>
+          <ul>
+            <li>Replace white rice with 3/4 cup cooked rice or extra roti.</li>
+            <li>Swap sweets for fruit + Greek/yogurt (unsweetened).</li>
+            <li>Use roasted chana instead of namkeen for crunch.</li>
+          </ul>
+        </section>
+
+        <hr />
+        <p class="muted small">This is a practical, normal-food plan. Stick to it and don't overcomplicate.</p>
+      </main>
+
+      <aside class="card">
+        <div class="section-title"><strong>Workout (home, no equipment)</strong><span class="muted small">45 min · 5–6 days</span></div>
+        <div style="margin-top:10px" class="workout-list">
+          <div>
+            <div class="exercise"><strong>Warm-up (5 min)</strong><div class="muted small">Jumping jacks, arm rotations, spot jog</div></div>
+            <div class="exercise"><strong>Squats</strong><div class="muted small">3 sets × 15 reps</div></div>
+            <div class="exercise"><strong>Push-ups (knees ok)</strong><div class="muted small">3 sets × 10 reps</div></div>
+            <div class="exercise"><strong>Glute bridges</strong><div class="muted small">3 sets × 20 reps</div></div>
+          </div>
+          <div>
+            <div class="exercise"><strong>Lunges</strong><div class="muted small">3 sets × 10 each leg</div></div>
+            <div class="exercise"><strong>Plank</strong><div class="muted small">3 sets × 30–45 sec</div></div>
+            <div class="exercise"><strong>Mountain climbers</strong><div class="muted small">3 sets × 20</div></div>
+            <div class="exercise"><strong>Cardio</strong><div class="muted small">Jumping jacks / skipping 3 × 1 min</div></div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px">
+          <strong>Cool down</strong>
+          <p class="muted small">Hamstring, hip, shoulder stretches — 5 minutes.</p>
+        </div>
+
+        <hr />
+
+        <div>
+          <strong>Quick 7-day rotating sample (pick similar swaps)</strong>
+          <div style="margin-top:8px;font-size:14px">
+            <ol>
+              <li>Mon: Besan chilla / Dal, roti / Dinner soup + tofu / Workout A</li>
+              <li>Tue: Oats / Rajma, sabzi / Dinner roti + sabzi / Workout B</li>
+              <li>Wed: Poha / Chole, rice(½ cup) / Dinner paneer stir fry / Active rest (walk)</li>
+              <li>Thu: Besan chilla / Dal + roti / Dinner soup / Workout A</li>
+              <li>Fri: Oats / Rajma + salad / Dinner roti + sabzi / Workout B</li>
+              <li>Sat: Poha / Mixed dal + sabzi / Light dinner + cheat small treat / Long walk</li>
+              <li>Sun: Rest or light yoga / meal choices as above</li>
+            </ol>
+          </div>
+        </div>
+
+        <hr />
+        <div>
+          <strong>Tips</strong>
+          <ul>
+            <li>First response to hunger — drink water.</li>
+            <li>Protein each meal to preserve muscle.</li>
+            <li>Be patient — 0.5–1 kg weekly is sustainable.</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <div class="section-title">
+        <strong class="collapse" id="advToggle">Advanced notes <span class="muted small">(click)</span></strong>
+      </div>
+      <div class="collapsible" id="advContent">
+        <p class="muted">If you want to progress: increase protein to 1.2–1.6g/kg of target bodyweight, add resistance (dumbbells or filled water bottles), and slowly reintroduce slightly higher calories as maintenance once at goal.</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="muted">Made quick & practical. Host this single HTML file anywhere (Netlify, GitHub Pages, or serve from a static folder).</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('printBtn').addEventListener('click',function(){window.print()})
+    document.getElementById('downloadBtn').addEventListener('click',function(){
+      const blob = new Blob([document.documentElement.outerHTML],{type:'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'diet-workout-plan.html';
+      document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    })
+
+    const advToggle = document.getElementById('advToggle');
+    const adv = document.getElementById('advContent');
+    let open=false;
+    advToggle.addEventListener('click',()=>{
+      open=!open; if(open){adv.classList.add('open'); adv.style.maxHeight='2000px'} else {adv.classList.remove('open'); adv.style.maxHeight='0'}
+    })
+  </script>
+</body>
+</html>
